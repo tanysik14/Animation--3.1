@@ -13,6 +13,9 @@
 		00A40BC329A35C7C009616F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A40BC129A35C7C009616F8 /* Main.storyboard */; };
 		00A40BC529A35C7D009616F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A40BC429A35C7D009616F8 /* Assets.xcassets */; };
 		00A40BC829A35C7D009616F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A40BC629A35C7D009616F8 /* LaunchScreen.storyboard */; };
+		00A40BD129A35C9A009616F8 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 00A40BD029A35C9A009616F8 /* SpringAnimation */; };
+		00A40BD329A369DB009616F8 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A40BD229A369DB009616F8 /* Animations.swift */; };
+		00A40BD729A36A53009616F8 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A40BD629A36A53009616F8 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		00A40BC429A35C7D009616F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A40BC729A35C7D009616F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A40BC929A35C7D009616F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A40BD229A369DB009616F8 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		00A40BD629A36A53009616F8 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A40BD129A35C9A009616F8 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,57 @@
 		00A40BBA29A35C7C009616F8 /* Animation--3.1 */ = {
 			isa = PBXGroup;
 			children = (
-				00A40BBB29A35C7C009616F8 /* AppDelegate.swift */,
-				00A40BBD29A35C7C009616F8 /* SceneDelegate.swift */,
-				00A40BBF29A35C7C009616F8 /* ViewController.swift */,
-				00A40BC129A35C7C009616F8 /* Main.storyboard */,
-				00A40BC429A35C7D009616F8 /* Assets.xcassets */,
-				00A40BC629A35C7D009616F8 /* LaunchScreen.storyboard */,
+				00A40BD429A36A16009616F8 /* Modals */,
+				00A40BDA29A36AD1009616F8 /* ViewControllers */,
+				00A40BD929A36A93009616F8 /* Storybords */,
+				00A40BD529A36A33009616F8 /* Services */,
+				00A40BD829A36A69009616F8 /* SuportFiels */,
 				00A40BC929A35C7D009616F8 /* Info.plist */,
 			);
 			path = "Animation--3.1";
+			sourceTree = "<group>";
+		};
+		00A40BD429A36A16009616F8 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				00A40BD229A369DB009616F8 /* Animations.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		00A40BD529A36A33009616F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00A40BD629A36A53009616F8 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00A40BD829A36A69009616F8 /* SuportFiels */ = {
+			isa = PBXGroup;
+			children = (
+				00A40BBD29A35C7C009616F8 /* SceneDelegate.swift */,
+				00A40BBB29A35C7C009616F8 /* AppDelegate.swift */,
+				00A40BC429A35C7D009616F8 /* Assets.xcassets */,
+			);
+			path = SuportFiels;
+			sourceTree = "<group>";
+		};
+		00A40BD929A36A93009616F8 /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				00A40BC129A35C7C009616F8 /* Main.storyboard */,
+				00A40BC629A35C7D009616F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		00A40BDA29A36AD1009616F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00A40BBF29A35C7C009616F8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +131,9 @@
 			dependencies = (
 			);
 			name = "Animation--3.1";
+			packageProductDependencies = (
+				00A40BD029A35C9A009616F8 /* SpringAnimation */,
+			);
 			productName = "Animation--3.1";
 			productReference = 00A40BB829A35C7C009616F8 /* Animation--3.1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 00A40BAF29A35C7C009616F8;
+			packageReferences = (
+				00A40BCF29A35C9A009616F8 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 00A40BB929A35C7C009616F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +195,8 @@
 				00A40BC029A35C7C009616F8 /* ViewController.swift in Sources */,
 				00A40BBC29A35C7C009616F8 /* AppDelegate.swift in Sources */,
 				00A40BBE29A35C7C009616F8 /* SceneDelegate.swift in Sources */,
+				00A40BD729A36A53009616F8 /* DataStore.swift in Sources */,
+				00A40BD329A369DB009616F8 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00A40BCF29A35C9A009616F8 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00A40BD029A35C9A009616F8 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A40BCF29A35C9A009616F8 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00A40BB029A35C7C009616F8 /* Project object */;
 }
